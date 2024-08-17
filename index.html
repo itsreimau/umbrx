@@ -1,27 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./static/style.min.css">
-    
-    <title>OddBot</title>
-</head>
-<body>
-    <div class="card">
-        <center>
-            <h1 class="name">OddBot</h1>
-            <p class="desc">The best and most used <br class="rb"> Discord Bot</p>
-        </center>
-        <section class="buttons">
-            <center>
-                <button onclick="invite()">Invite</button>
-                <button onclick="supportServer()">Support Server</button>
-            </center>
-        </section>
-        <p class="stats"><a>${serverCount}</a> server<span class="statsdivider"></span>${usersCount} users</p>
-    </div>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Rei Ayanami - WhatsApp Bot</title>
+        <link rel="icon" href="https://avatars.githubusercontent.com/u/90613431?v=4" />
+        <meta name="description" content="I am a WhatsApp Bot named Rei Ayanami, owned by ItsReimau." />
+        <meta name="keywords" content="whatsapp bot" />
+        <meta name="author" content="Muhamad Ikbal Maulana | ItsReimau" />
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:url" content="https://itsreimau.is-a.dev" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Rei Ayanami - WhatsApp Bot" />
+        <meta property="og:description" content="I am a WhatsApp Bot named Rei Ayanami, owned by ItsReimau." />
+        <meta property="og:image" content="https://avatars.githubusercontent.com/u/90613431?v=4" />
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Rei Ayanami - WhatsApp Bot" />
+        <meta name="twitter:description" content="I am a WhatsApp Bot named Rei Ayanami, owned by ItsReimau." />
+        <meta name="twitter:image" content="https://avatars.githubusercontent.com/u/90613431?v=4" />
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="dist/css/style.css" />
+    </head>
+    <body>
+        <div class="card">
+            <h1 class="name">Rei Ayanami</h1>
+            <p class="desc">
+                Hello! I am a WhatsApp Bot named Rei Ayanami, owned by ItsReimau. I can perform many commands, such as creating stickers, using AI for certain jobs, and several other useful commands. I'm here to entertain and delight you!
+            </p>
+
+            <div class="buttons">
+                <button id="tryBtn"><i class="fas fa-play"></i> Try</button>
+                <button id="supportBtn"><i class="fas fa-users"></i> Support Group</button>
+            </div>
+
+            <p class="status">Status:<span id="botStatus" class="online">&nbsp;Online</span></p>
+        </div>
+
+        <script src="./dist/js/button.js"></script>
+    </body>
 </html>
-<script src="./static/buttons.js"></script>
