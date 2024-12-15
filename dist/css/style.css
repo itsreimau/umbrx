@@ -1,76 +1,29 @@
-/* Importing fonts and icons */
-@import url("https://fonts.googleapis.com/css2?family=Akshar&display=swap");
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+/* Glassmorphism */
+.glass {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
 
 /* Body */
 body {
-    font-family: "Akshar", sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: linear-gradient(to bottom, #1a1d25, #4b5c72); /* NERV-style dark gradient */
-    color: #e0e0e0;
+    background-image: url("../img/background.jpeg");
+    background-size: cover;
+    background-position: center;
 }
 
-/* Card */
-.card {
-    background-color: #222831;
-    border: 1px solid #ff4747; /* NERV-inspired red outline */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
-    border-radius: 10px;
-    width: 85%;
-    max-width: 450px;
-    padding: 2em;
-    text-align: center;
-    transition: transform 0.3s;
-}
-
-.card:hover {
-    transform: scale(1.05); /* Slight scale effect on hover */
-}
-
-/* Bot */
-.name {
-    font-size: 2.5em;
-    color: #98a9b5;
-}
-
-.desc {
-    font-size: 1.1em;
-    color: #cfd8dc;
-}
-
-/* Buttons */
-.buttons {
-    margin-top: 1.5em;
-    display: flex;
-    justify-content: center;
-    gap: 1em;
-}
-
+/* Button */
 button {
-    padding: 0.8em 1.8em;
-    color: #ffffff;
-    background-color: #1f2d3d;
-    border: 1px solid #ff4747;
-    border-radius: 4px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #ff4747;
-    color: #ffffff;
-    transform: translateY(-3px);
+    transform: translateY(-5px);
 }
 
-/* Responsive design for smaller screens */
-@media (max-width: 500px) {
-    .card {
-        width: 95%;
-    }
-    .buttons {
-        flex-direction: column;
-        gap: 0.5em;
-    }
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
 }

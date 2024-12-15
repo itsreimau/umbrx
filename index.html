@@ -3,9 +3,9 @@
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Rei Ayanami - WhatsApp Bot</title>
+        <title>Ayanami Rei - WhatsApp Bot</title>
         <link rel="icon" href="https://static.wikia.nocookie.net/toweroffantasy/images/4/48/Avatar_Rei_Ayanami.png/revision/latest/thumbnail/width/360/height/360?cb=20240304011124" />
-        <meta name="description" content="I am a WhatsApp Bot named Rei Ayanami, owned by ItsReimau." />
+        <meta name="description" content="I am a WhatsApp Bot named Ayanami Rei, owned by ItsReimau." />
         <meta name="keywords" content="whatsapp bot" />
         <meta name="author" content="Muhamad Ikbal Maulana | ItsReimau" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,35 +13,41 @@
         <!-- Open Graph / Facebook -->
         <meta property="og:url" content="https://itsreimau.is-a.dev/rei-ayanami" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Rei Ayanami - WhatsApp Bot" />
-        <meta property="og:description" content="I am a WhatsApp Bot named Rei Ayanami, owned by ItsReimau." />
+        <meta property="og:title" content="Ayanami Rei - WhatsApp Bot" />
+        <meta property="og:description" content="I am a WhatsApp Bot named Ayanami Rei, owned by ItsReimau." />
         <meta property="og:image" content="https://static.wikia.nocookie.net/toweroffantasy/images/4/48/Avatar_Rei_Ayanami.png/revision/latest/thumbnail/width/360/height/360?cb=20240304011124" />
 
         <!-- Twitter -->
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Rei Ayanami - WhatsApp Bot" />
-        <meta name="twitter:description" content="I am a WhatsApp Bot named Rei Ayanami, owned by ItsReimau." />
+        <meta name="twitter:title" content="Ayanami Rei - WhatsApp Bot" />
+        <meta name="twitter:description" content="I am a WhatsApp Bot named Ayanami Rei, owned by ItsReimau." />
         <meta name="twitter:image" content="https://static.wikia.nocookie.net/toweroffantasy/images/4/48/Avatar_Rei_Ayanami.png/revision/latest/thumbnail/width/360/height/360?cb=20240304011124" />
 
-        <!-- Custom CSS -->
+        <!-- Tailwind CSS -->
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+        <!-- Local CSS -->
         <link rel="stylesheet" href="dist/css/style.css" />
     </head>
-    <body>
-        <!-- Card -->
-        <div class="card">
-            <h1 class="name">Rei Ayanami</h1>
-            <p class="desc">
-                Hello! I am a WhatsApp Bot named Rei Ayanami, owned by ItsReimau. I can perform many commands, such as creating stickers, using AI for certain jobs, and several other useful commands. I'm here to entertain and delight you!
+    <body class="font-sans text-gray-200 flex justify-center items-center min-h-screen">
+        <!-- Glass Card -->
+        <div class="glass p-8 w-11/12 max-w-md text-center">
+            <h1 class="text-4xl text-blue-400 font-bold mb-4">Ayanami Rei</h1>
+            <p class="text-lg text-blue-200 mb-6">
+                Hello! I am a WhatsApp Bot named Ayanami Rei, owned by ItsReimau. I can perform many commands, such as creating stickers, using AI for certain jobs, and several other useful commands. I'm here to entertain and delight you!
             </p>
 
             <!-- Buttons -->
-            <div class="buttons">
-                <button id="tryBtn"><i class="fas fa-play"></i> Try</button>
-                <button id="supportBtn"><i class="fas fa-users"></i> Support Group</button>
+            <div class="flex justify-center gap-4">
+                <button id="tryBtn" class="bg-blue-500 hover:bg-red-500 text-white py-2 px-6 rounded-md"><i class="fas fa-play"></i> Try</button>
+                <button id="supportBtn" class="bg-blue-500 hover:bg-red-500 text-white py-2 px-6 rounded-md"><i class="fas fa-users"></i> Support Group</button>
             </div>
         </div>
 
-        <!-- JavaScript -->
+        <!-- Local JS -->
         <script src="./dist/js/button.js"></script>
     </body>
 </html>
