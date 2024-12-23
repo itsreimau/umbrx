@@ -1,15 +1,15 @@
 /* Glassmorphism */
 .glass {
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-    backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    background: rgba(200, 200, 200, 0.2);
+    border-radius: 15px;
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
 }
 
 /* Body */
 body {
-    background-image: url("../img/background.jpeg");
+    background: linear-gradient(to bottom, #2c2c2c, #3a3a3a);
     background-size: cover;
     background-position: center;
 }
@@ -17,13 +17,18 @@ body {
 /* Button */
 button {
     transition: transform 0.3s ease, background-color 0.3s ease;
+    background: linear-gradient(90deg, #555, #666);
+    color: #fff;
+    font-weight: bold;
 }
 
 button:hover {
     transform: translateY(-5px);
+    background: linear-gradient(90deg, #333, #444);
 }
 
-button:focus {
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
+/* Logo Container */
+.logo-container img {
+    width: 150px;
+    height: auto;
 }
