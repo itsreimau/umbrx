@@ -1,5 +1,5 @@
 document.getElementById("tryBtn").addEventListener("click", function() {
-    window.open("https://wa.me/62857568214683", "_blank");
+    window.open("https://wa.me/6288293456464", "_blank");
 });
 
 document.getElementById("supportBtn").addEventListener("click", function() {
