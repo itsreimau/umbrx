@@ -2,7 +2,6 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>UmbrX - WhatsApp Bot</title>
         <link rel="icon" href="dist/img/icon.jpg" />
@@ -29,30 +28,40 @@
     <body class="bg-gray-900 text-gray-300 font-sans min-h-screen flex flex-col items-center">
         <!-- Main Container -->
         <main class="container mx-auto px-4 py-8">
-            <!-- Card Section -->
-            <section class="max-w-3xl mx-auto bg-gray-800 rounded-lg shadow-lg text-center p-6">
-                <img src="dist/img/logo.png" alt="UmbrX Logo" class="mx-auto w-40 h-auto" />
-                <h1 class="text-3xl font-bold text-gray-100">WhatsApp Bot</h1>
-                <p class="mt-4 text-sm text-gray-400">Hello! I am a WhatsApp Bot named <span class="text-gray-200 font-semibold">UmbrX</span>, owned by ItsReimau. I can perform tasks like creating stickers, AI assistance, and more.</p>
+            <!-- Navigation -->
+            <nav class="text-center mb-8">
+                <button id="btn-show-umbrx" class="text-xl font-semibold text-gray-100 hover:text-blue-400 transition">
+                    <img id="logo-umbrx" src="dist/img/logo.png" alt="UmbrX Logo" class="inline-block w-auto h-6" />
+                </button>
+                <span class="text-gray-500 mx-4">|</span>
+                <button id="btn-show-inside" class="text-xl font-semibold text-gray-100 hover:text-blue-400 transition">
+                    Inside
+                </button>
+            </nav>
+
+            <!-- UmbrX Bot Section -->
+            <section id="section-umbrx" class="max-w-3xl mx-auto bg-gray-800 rounded-lg shadow-lg text-center p-6">
+                <h1 class="text-3xl font-bold text-gray-100">UmbrX Bot</h1>
+                <p class="mt-4 text-sm text-gray-400">
+                    Hello! I am a WhatsApp Bot called UmbrX, owned by ItsReimau. I can perform many commands, such as creating stickers, using AI for certain jobs, and several other useful commands.
+                </p>
                 <div class="flex justify-center gap-4 mt-6">
                     <button id="btn-try-umbrx" class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-6 rounded-lg">Try</button>
                     <button id="btn-support-umbrx" class="bg-green-600 hover:bg-green-700 text-white py-2 px-6 rounded-lg">Support Group</button>
                 </div>
             </section>
 
-            <!-- UmbrX Inside -->
-            <section class="mt-8 max-w-5xl mx-auto bg-gray-800 rounded-lg shadow-lg p-6">
+            <!-- UmbrX Inside Section -->
+            <section id="section-inside" class="hidden max-w-5xl mx-auto bg-gray-800 rounded-lg shadow-lg p-6">
                 <h2 class="text-xl font-bold text-gray-100 text-center mb-6">UmbrX Inside</h2>
                 <p class="text-sm text-gray-400 text-center mb-8">
-                    UmbrX Inside is a service enabling the development of WhatsApp bots with features like stickers, AI tools, and more.
+                    UmbrX Inside is a service enabling the development of WhatsApp bots with features like UmbrX. Currently, we have 3 out of 5 bot slots available.
                 </p>
-
-                <!-- Cards -->
                 <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     <!-- Card 1 -->
                     <div class="bg-cover bg-center rounded-lg overflow-hidden shadow-md" style="background-image: url('dist/img/thumbnail/umbrx.jpg');">
                         <div class="p-4 bg-gray-800 bg-opacity-80">
-                            <h3 class="text-lg font-semibold text-gray-100">BotName: Kirito Assalam</h3>
+                            <h3 class="text-lg font-semibold text-gray-100">Kirito Assalam</h3>
                             <p class="text-sm text-gray-400 mb-4">Owner: Arsani</p>
                             <div class="flex justify-between">
                                 <button id="btn-try-krtsslm" class="bg-blue-600 hover:bg-blue-700 text-white py-1 px-4 rounded text-sm">Try</button>
@@ -63,7 +72,7 @@
                     <!-- Card 2 -->
                     <div class="bg-cover bg-center rounded-lg overflow-hidden shadow-md" style="background-image: url('dist/img/thumbnail/umbrx.jpg');">
                         <div class="p-4 bg-gray-800 bg-opacity-80">
-                            <h3 class="text-lg font-semibold text-gray-100">BotName: Akselia Yourbae</h3>
+                            <h3 class="text-lg font-semibold text-gray-100">Akselia Yourbae</h3>
                             <p class="text-sm text-gray-400 mb-4">Owner: Acaa</p>
                             <div class="flex justify-between">
                                 <button id="btn-try-kslyrb" class="bg-blue-600 hover:bg-blue-700 text-white py-1 px-4 rounded text-sm">Try</button>
@@ -74,7 +83,7 @@
                     <!-- Card 3 -->
                     <div class="bg-cover bg-center rounded-lg overflow-hidden shadow-md" style="background-image: url('dist/img/thumbnail/kmstyk.jpg');">
                         <div class="p-4 bg-gray-800 bg-opacity-80">
-                            <h3 class="text-lg font-semibold text-gray-100">BotName: Kamisato Ayaka</h3>
+                            <h3 class="text-lg font-semibold text-gray-100">Kamisato Ayaka</h3>
                             <p class="text-sm text-gray-400 mb-4">Owner: Putri</p>
                             <div class="flex justify-between">
                                 <button id="btn-try-kmstyk" class="bg-blue-600 hover:bg-blue-700 text-white py-1 px-4 rounded text-sm">Try</button>
@@ -82,11 +91,21 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Card for Creating WhatsApp Bot -->
+                    <div class="bg-gray-700 rounded-lg shadow-md p-4">
+                        <h3 class="text-lg font-semibold text-gray-100">How to Create a WhatsApp Bot</h3>
+                        <ul class="text-sm text-gray-400 mt-2">
+                            <li>- Must have your own number</li>
+                            <li>- No requests for additional features like bug, spam, etc.</li>
+                            <li>- We are not responsible for any issues such as spam or WhatsApp bans</li>
+                            <li>- This service is free, if you'd like to support me, you can send a donation.</li>
+                        </ul>
+                    </div>
                 </div>
             </section>
         </main>
 
         <!-- Local JS -->
-        <script src="./dist/js/button.js"></script>
+        <script src="dist/js/script.js"></script>
     </body>
 </html>
