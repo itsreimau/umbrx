@@ -14,9 +14,14 @@ btnShowInside.addEventListener("click", () => {
     umbrxSection.classList.add("hidden");
 });
 
+// Button actions for "Contact"
+document.getElementById("btn-contact").addEventListener("click", () => {
+    window.open("https://wa.me/6283838039693", "_blank");
+});
+
 // Button actions for "UmbrX Bot"
 document.getElementById("btn-try-umbrx").addEventListener("click", () => {
-    window.open("https://wa.me/6288293456464", "_blank");
+    window.open("https://wa.me/6281918403548", "_blank");
 });
 document.getElementById("btn-support-umbrx").addEventListener("click", () => {
     window.open("https://chat.whatsapp.com/FxEYZl2UyzAEI2yhaH34Ye", "_blank");
@@ -40,8 +45,8 @@ document.getElementById("btn-support-kslyrb").addEventListener("click", function
 
 // Button actions for "Kamisato Ayaka"
 document.getElementById("btn-try-kmstyk").addEventListener("click", function() {
-    window.open("https://wa.me/6288293456464", "_blank");
+    window.open("https://wa.me/6285165309861", "_blank");
 });
 document.getElementById("btn-support-kmstyk").addEventListener("click", function() {
-    window.open("https://chat.whatsapp.com/FxEYZl2UyzAEI2yhaH34Ye", "_blank");
+    window.open("https://chat.whatsapp.com/GtRlLAKLw9JG4ISqb09PeS", "_blank");
 });
