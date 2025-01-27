@@ -50,3 +50,11 @@ document.getElementById("btn-try-kmstyk").addEventListener("click", function() {
 document.getElementById("btn-support-kmstyk").addEventListener("click", function() {
     window.open("https://chat.whatsapp.com/GtRlLAKLw9JG4ISqb09PeS", "_blank");
 });
+
+// Button actions for "Mambo"
+document.getElementById("btn-try-kmstyk").addEventListener("click", function() {
+    window.open("https://wa.me/62895400967027", "_blank");
+});
+document.getElementById("btn-support-kmstyk").addEventListener("click", function() {
+    window.open("https://chat.whatsapp.com/ES6AlKeJmZL4C1m4B0Su2t", "_blank");
+});
