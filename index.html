@@ -1,118 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>UmbrX - WhatsApp Bot</title>
+        <title>UmbrX - Bot WhatsApp</title>
         <link rel="icon" href="dist/img/icon.jpg" />
-        <meta name="description" content="I am a WhatsApp Bot named UmbrX, owned by ItsReimau." />
-        <meta name="keywords" content="whatsapp bot" />
+        <meta name="description" content="Saya adalah Bot WhatsApp bernama UmbrX, dimiliki oleh ItsReimau." />
+        <meta name="keywords" content="bot whatsapp" />
         <meta name="author" content="Muhamad Ikbal Maulana | ItsReimau" />
 
         <!-- Open Graph / Facebook -->
         <meta property="og:url" content="https://itsreimau.is-a.dev/rei-ayanami" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="UmbrX - WhatsApp Bot" />
-        <meta property="og:description" content="I am a WhatsApp Bot named UmbrX, owned by ItsReimau." />
+        <meta property="og:title" content="UmbrX - Bot WhatsApp" />
+        <meta property="og:description" content="Saya adalah Bot WhatsApp bernama UmbrX, dimiliki oleh ItsReimau." />
         <meta property="og:image" content="dist/img/icon.jpg" />
 
         <!-- Twitter -->
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="UmbrX - WhatsApp Bot" />
-        <meta name="twitter:description" content="I am a WhatsApp Bot named UmbrX, owned by ItsReimau." />
+        <meta name="twitter:title" content="UmbrX - Bot WhatsApp" />
+        <meta name="twitter:description" content="Saya adalah Bot WhatsApp bernama UmbrX, dimiliki oleh ItsReimau." />
         <meta name="twitter:image" content="dist/img/icon.jpg" />
 
         <!-- Tailwind CSS -->
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
     <body class="bg-gray-900 text-gray-300 font-sans min-h-screen flex flex-col">
-        <!-- Navigation -->
+        <!-- Navigasi -->
         <header class="bg-gray-800 shadow-md">
             <div class="container mx-auto px-6 py-4 flex justify-between items-center">
                 <div class="flex items-center space-x-3">
-                    <img id="logo-umbrx" src="dist/img/logo.png" alt="UmbrX Logo" class="inline-block w-auto h-6" />
+                    <img id="logo-umbrx" src="dist/img/logo.png" alt="Logo UmbrX" class="inline-block w-auto h-6" />
                 </div>
                 <nav class="space-x-4">
-                    <button id="btn-show-umbrx" class="text-gray-100 hover:text-blue-400">Home</button>
+                    <button id="btn-show-umbrx" class="text-gray-100 hover:text-blue-400">Beranda</button>
                     <button id="btn-show-inside" class="text-gray-100 hover:text-blue-400">Inside</button>
                 </nav>
             </div>
         </header>
 
-        <!-- Main Content -->
+        <!-- Konten Utama -->
         <main class="container mx-auto px-6 py-12">
-            <!-- UmbrX Bot Section -->
+            <!-- Bagian UmbrX Bot -->
             <section id="section-umbrx" class="bg-gray-800 rounded-lg shadow-lg p-8 mb-12">
                 <h1 class="text-3xl font-bold text-white text-center mb-4">UmbrX Bot</h1>
                 <p class="text-gray-400 text-center max-w-xl mx-auto">
-                    Hello! I am a WhatsApp Bot called UmbrX, owned by ItsReimau. I can perform many commands, such as creating stickers, using AI for certain jobs, and several other useful commands.
+                    Halo! Saya adalah bot WhatsApp bernama UmbrX, dimiliki oleh ItsReimau. Saya bisa melakukan banyak perintah, seperti membuat stiker, menggunakan AI untuk pekerjaan tertentu, dan beberapa perintah berguna lainnya. Saya di
+                    sini untuk menghibur dan menyenangkan Anda!
                 </p>
                 <div class="flex justify-center gap-4 mt-6">
-                    <button id="btn-try-umbrx" class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-6 rounded-lg">Try</button>
-                    <button id="btn-support-umbrx" class="bg-green-600 hover:bg-green-700 text-white py-2 px-6 rounded-lg">Support Group</button>
+                    <button id="btn-try-umbrx" class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-6 rounded-lg">Coba</button>
+                    <button id="btn-support-umbrx" class="bg-green-600 hover:bg-green-700 text-white py-2 px-6 rounded-lg">Grup Dukungan</button>
                 </div>
             </section>
 
-            <!-- UmbrX Inside Section -->
+            <!-- Bagian UmbrX Inside -->
             <section id="section-inside" class="hidden">
                 <div class="bg-gray-800 rounded-lg shadow-lg p-8">
                     <h2 class="text-2xl font-bold text-white text-center mb-6">UmbrX Inside</h2>
                     <p class="text-gray-400 text-center mb-8 max-w-2xl mx-auto">
-                        UmbrX Inside allows you to create custom WhatsApp bot with advanced features like UmbrX. Unlike automated platforms, bot setup is done manually. We currently have <b>4 of 5 slots available</b>. Contact us using the
-                        button below to get started!
+                        UmbrX Inside adalah program yang saya buat untuk mereka yang ingin memiliki bot berbasis UmbrX, karena bot UmbrX sering dibanned. Berbeda dengan layanan hosting otomatis seperti
+                        <a href="https://wibusoft.com/">Wibusoft</a> atau <a href="https://hisoka.net/">Hisoka</a>, sistem di sini manual, begitu ada permintaan masuk, saya langsung proses botnya. Saat ini tersedia 4 dari 5 slot. Hubungi
+                        saya melalui tombol di bawah untuk request bot, atau gunakan bot yang sudah tersedia!
                     </p>
                     <div class="text-center mb-6">
-                        <button id="btn-contact" class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-6 rounded text-lg">
-                            Contact Me
-                        </button>
+                        <button id="btn-contact" class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-6 rounded text-lg">Hubungi Saya</button>
                     </div>
                     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                        <!-- Card 1 -->
+                        <!-- Bot 1 -->
                         <div class="bg-cover bg-center rounded-lg shadow-md p-4" style="background-image: url('dist/img/thumbnail/umbrx.jpg');">
                             <h3 class="text-lg font-semibold text-white">Kirito Assalam</h3>
                             <p class="text-sm text-gray-400">Owner: Arsani</p>
                             <div class="mt-4 flex justify-between">
-                                <button id="btn-try-krtsslm" class="bg-blue-600 hover:bg-blue-700 text-white py-1 px-4 rounded text-sm">Try</button>
-                                <button id="btn-support-krtsslm" class="bg-green-600 hover:bg-green-700 text-white py-1 px-4 rounded text-sm">Support Group</button>
+                                <button id="btn-try-krtsslm" class="bg-blue-600 hover:bg-blue-700 text-white py-1 px-4 rounded text-sm">Coba</button>
+                                <button id="btn-support-krtsslm" class="bg-green-600 hover:bg-green-700 text-white py-1 px-4 rounded text-sm">Grup Dukungan</button>
                             </div>
                         </div>
-                        <!-- Card 2 -->
+                        <!-- Bot 2 -->
                         <div class="bg-cover bg-center rounded-lg shadow-md p-4" style="background-image: url('dist/img/thumbnail/umbrx.jpg');">
                             <h3 class="text-lg font-semibold text-white">Akselia Yourbae</h3>
                             <p class="text-sm text-gray-400">Owner: Acaa</p>
                             <div class="mt-4 flex justify-between">
-                                <button id="btn-try-kslyrb" class="bg-blue-600 hover:bg-blue-700 text-white py-1 px-4 rounded text-sm">Try</button>
-                                <button id="btn-support-kslyrb" class="bg-green-600 hover:bg-green-700 text-white py-1 px-4 rounded text-sm">Support Group</button>
+                                <button id="btn-try-kslyrb" class="bg-blue-600 hover:bg-blue-700 text-white py-1 px-4 rounded text-sm">Coba</button>
+                                <button id="btn-support-kslyrb" class="bg-green-600 hover:bg-green-700 text-white py-1 px-4 rounded text-sm">Grup Dukungan</button>
                             </div>
                         </div>
-                        <!-- Card 3 -->
+                        <!-- Bot 3 -->
                         <div class="bg-cover bg-center rounded-lg shadow-md p-4" style="background-image: url('dist/img/thumbnail/kmstyk.jpg');">
                             <h3 class="text-lg font-semibold text-white">Kamisato Ayaka</h3>
                             <p class="text-sm text-gray-400">Owner: Putri</p>
                             <div class="mt-4 flex justify-between">
-                                <button id="btn-try-kmstyk" class="bg-blue-600 hover:bg-blue-700 text-white py-1 px-4 rounded text-sm">Try</button>
-                                <button id="btn-support-kmstyk" class="bg-green-600 hover:bg-green-700 text-white py-1 px-4 rounded text-sm">Support Group</button>
+                                <button id="btn-try-kmstyk" class="bg-blue-600 hover:bg-blue-700 text-white py-1 px-4 rounded text-sm">Coba</button>
+                                <button id="btn-support-kmstyk" class="bg-green-600 hover:bg-green-700 text-white py-1 px-4 rounded text-sm">Grup Dukungan</button>
                             </div>
                         </div>
-                        <!-- Card 4 -->
+                        <!-- Bot 4 -->
                         <div class="bg-cover bg-center rounded-lg shadow-md p-4" style="background-image: url('dist/img/thumbnail/mambo.jpg');">
                             <h3 class="text-lg font-semibold text-white">Mambo</h3>
                             <p class="text-sm text-gray-400">Owner: Toopie</p>
                             <div class="mt-4 flex justify-between">
-                                <button id="btn-try-mambo" class="bg-blue-600 hover:bg-blue-700 text-white py-1 px-4 rounded text-sm">Try</button>
-                                <button id="btn-support-mambo" class="bg-green-600 hover:bg-green-700 text-white py-1 px-4 rounded text-sm">Support Group</button>
+                                <button id="btn-try-mambo" class="bg-blue-600 hover:bg-blue-700 text-white py-1 px-4 rounded text-sm">Coba</button>
+                                <button id="btn-support-mambo" class="bg-green-600 hover:bg-green-700 text-white py-1 px-4 rounded text-sm">Grup Dukungan</button>
                             </div>
                         </div>
-                        <!-- Create WhatsApp Bot Info -->
-                        <div class="bg-cover bg-center rounded-lg shadow-md p-4 col-span-full">
-                            <h3 class="text-lg font-semibold text-white">How to Create a WhatsApp Bot</h3>
-                            <ul class="text-sm text-gray-400 mt-4 space-y-2">
-                                <li>- Must have your own number.</li>
-                                <li>- No requests for additional features like bug, spam, etc.</li>
-                                <li>- We are not responsible for any issues such as ban or spam.</li>
-                                <li>- This service is free, if you'd like to support me, you can send a donation.</li>
-                            </ul>
-                        </div>
+                    </div>
+                    <!-- Info Pembuatan Bot -->
+                    <div class="bg-cover bg-center rounded-lg shadow-md p-4 col-span-full">
+                        <h3 class="text-lg font-semibold text-white">Catatan</h3>
+                        <ul class="text-sm text-gray-400 mt-4 space-y-2">
+                            <li>- Tidak menerima permintaan fitur yang merugikan orang lain seperti bug, spam, dll.</li>
+                            <li>- Kami tidak bertanggung jawab atas masalah seperti banned atau spam.</li>
+                            <li>- Layanan ini gratis, namun jika ingin mendukung kami, Anda bisa memberikan donasi.</li>
+                        </ul>
                     </div>
                 </div>
             </section>
@@ -123,7 +122,7 @@
             <p class="text-gray-500 text-sm">Copyright &copy; 2025 <a href="https://itsreimau.is-a.dev/">ItsReimau</a>. All Rights Reserved.</p>
         </footer>
 
-        <!-- Local JS -->
+        <!-- Skrip Lokal -->
         <script src="dist/js/script.js"></script>
     </body>
 </html>
