@@ -58,30 +58,133 @@
                     UmbrX Inside adalah layanan untuk mereka yang ingin memiliki bot berbasis UmbrX.
                 </p>
 
-                <form id="botForm" class="max-w-lg mx-auto">
-                    <div class="mb-4">
-                        <label for="botname" class="block text-gray-400 text-sm font-bold mb-2">Nama Bot</label>
-                        <input type="text" id="botname" class="input-field" required />
+                <form id="botForm" class="max-w-lg mx-auto space-y-6">
+                    <!-- Nama Bot -->
+                    <div>
+                        <label for="botname" class="block text-gray-300 text-sm font-semibold mb-2">Nama Bot</label>
+                        <input
+                            type="text"
+                            id="botname"
+                            placeholder="Masukkan nama bot..."
+                            class="w-full px-4 py-3 bg-gray-700 text-white rounded-lg border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300"
+                            required
+                        />
                     </div>
-                    <div class="mb-4">
-                        <label for="fullname" class="block text-gray-400 text-sm font-bold mb-2">Nama Lengkap</label>
-                        <input type="text" id="fullname" class="input-field" required />
+
+                    <!-- Nama Lengkap -->
+                    <div>
+                        <label for="fullname" class="block text-gray-300 text-sm font-semibold mb-2">Nama Lengkap</label>
+                        <input
+                            type="text"
+                            id="fullname"
+                            placeholder="Masukkan nama lengkap..."
+                            class="w-full px-4 py-3 bg-gray-700 text-white rounded-lg border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300"
+                            required
+                        />
                     </div>
-                    <div class="mb-4">
-                        <label for="username" class="block text-gray-400 text-sm font-bold mb-2">Nama Pengguna</label>
-                        <input type="text" id="username" class="input-field" required />
+
+                    <!-- Nama Pengguna -->
+                    <div>
+                        <label for="username" class="block text-gray-300 text-sm font-semibold mb-2">Nama Pengguna</label>
+                        <input
+                            type="text"
+                            id="username"
+                            placeholder="Masukkan nama pengguna..."
+                            class="w-full px-4 py-3 bg-gray-700 text-white rounded-lg border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300"
+                            required
+                        />
                     </div>
-                    <div class="mb-4">
-                        <label for="password" class="block text-gray-400 text-sm font-bold mb-2">Kata Sandi</label>
-                        <input type="password" id="password" class="input-field" required />
+
+                    <!-- Kata Sandi -->
+                    <div>
+                        <label for="password" class="block text-gray-300 text-sm font-semibold mb-2">Kata Sandi</label>
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Masukkan kata sandi..."
+                            class="w-full px-4 py-3 bg-gray-700 text-white rounded-lg border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300"
+                            required
+                        />
                     </div>
-                    <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg font-bold text-lg">
+
+                    <!-- Tombol Daftar -->
+                    <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg font-bold text-lg transition-transform transform hover:scale-105 focus:ring-4 focus:ring-blue-500">
                         Daftarkan Bot
                     </button>
                 </form>
 
                 <!-- Hasil Respons -->
                 <div id="responseMessage" class="mt-6 text-center text-lg font-semibold"></div>
+            </section>
+
+            <!-- Catatan -->
+            <section class="bg-gray-800 rounded-lg shadow-lg p-8 mb-12">
+                <div class="bg-gray-700 rounded-lg shadow-md p-6 mt-8">
+                    <h2 class="text-lg font-semibold text-white mb-4">Catatan</h2>
+                    <ul class="text-sm text-gray-400 space-y-2">
+                        <li>Tidak menerima permintaan fitur yang merugikan orang lain seperti bug, spam, dll.</li>
+                        <li>Kami tidak bertanggung jawab atas masalah seperti banned atau spam.</li>
+                        <li>Layanan ini gratis, namun jika ingin mendukung kami, Anda bisa memberikan donasi.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Thanks To -->
+            <section class="bg-gray-800 rounded-lg shadow-lg p-8 mb-12">
+                <h2 class="text-3xl font-bold text-white text-center mb-8">Terima kasih kepada</h2>
+                <div class="flex justify-center gap-8 flex-wrap">
+                    <!-- Logo 1 -->
+                    <div class="flex flex-col items-center">
+                        <img class="h-12 rounded-full" src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Allah_calligraphy.svg" alt="Logo Allah SWT" />
+                        <p class="text-gray-400 text-sm mt-2">Allah SWT</p>
+                    </div>
+                    <!-- Logo 2 -->
+                    <div class="flex flex-col items-center">
+                        <img class="h-12 rounded-full" src="https://avatars.githubusercontent.com/u/90613431?v=4" alt="Logo ItsReimau" />
+                        <p class="text-gray-400 text-sm mt-2">ItsReimau</p>
+                    </div>
+                    <!-- Logo 3 -->
+                    <div class="flex flex-col items-center">
+                        <img class="h-12 rounded-full" src="https://www.serv00.com/static/ct8/img/logo.jpg" alt="Logo Serv00" />
+                        <p class="text-gray-400 text-sm mt-2">Serv00</p>
+                    </div>
+                    <!-- Logo 4 -->
+                    <div class="flex flex-col items-center">
+                        <img class="h-12 rounded-full" src="https://avatars.githubusercontent.com/u/73673322?v=4" alt="Logo JastinXyz" />
+                        <p class="text-gray-400 text-sm mt-2">JastinXyz</p>
+                    </div>
+                    <!-- Logo 5 -->
+                    <div class="flex flex-col items-center">
+                        <img class="h-12 rounded-full" src="https://avatars.githubusercontent.com/u/84653497?v=4" alt="Logo Idul" />
+                        <p class="text-gray-400 text-sm mt-2">Idul</p>
+                    </div>
+                    <!-- Logo 6 -->
+                    <div class="flex flex-col items-center">
+                        <img class="h-12 rounded-full" src="https://avatars.githubusercontent.com/u/101232052?v=4" alt="Logo UdeanDev" />
+                        <p class="text-gray-400 text-sm mt-2">UdeanDev</p>
+                    </div>
+                    <!-- Logo 7 -->
+                    <div class="flex flex-col items-center">
+                        <img class="h-12 rounded-full" src="https://avatars.githubusercontent.com/u/170422885?v=4" alt="Logo Nyx Altair" />
+                        <p class="text-gray-400 text-sm mt-2">Nyx Altair</p>
+                    </div>
+                    <!-- Logo 8 -->
+                    <div class="flex flex-col items-center">
+                        <img class="h-12 rounded-full" src="https://avatars.githubusercontent.com/u/166631827?v=4" alt="Logo Caliph Dev" />
+                        <p class="text-gray-400 text-sm mt-2">Caliph Dev</p>
+                    </div>
+                    <!-- Logo 9 -->
+                    <div class="flex flex-col items-center">
+                        <img class="h-12 rounded-full" src="https://avatars.githubusercontent.com/u/95547694?v=4" alt="Logo Fatahillah Al makarim" />
+                        <p class="text-gray-400 text-sm mt-2">Fatahillah Al makarim</p>
+                    </div>
+                    <!-- Logo 10 -->
+                    <div class="flex flex-col items-center">
+                        <img class="h-12 rounded-full" src="https://avatars.githubusercontent.com/u/148448773?v=4" alt="Logo FastURL (alias Hikaru)" />
+                        <p class="text-gray-400 text-sm mt-2">FastURL (alias Hikaru)</p>
+                    </div>
+                </div>
+                <p class="text-gray-400 text-center text-sm mt-2">Dan kepada semua pihak yang telah membantu dalam pengembangan layanan ini.</p>
             </section>
         </main>
 
