@@ -1,185 +1,96 @@
+<!DOCTYPE html>
 <html lang="id">
     <head>
-        <meta charset="utf-8" />
-        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>UmbrX - Bot WhatsApp</title>
-        <link href="dist/img/icon.jpg" rel="icon" />
-        <meta content="Saya adalah Bot WhatsApp bernama UmbrX, dimiliki oleh ItsReimau." name="description" />
-        <meta content="bot whatsapp" name="keywords" />
-        <meta content="Muhamad Ikbal Maulana | ItsReimau" name="author" />
+        <link rel="icon" href="dist/img/icon.jpg" />
+        <meta name="description" content="Saya adalah Bot WhatsApp bernama UmbrX, dimiliki oleh ItsReimau." />
+        <meta name="keywords" content="bot whatsapp, chatbot, AI" />
+        <meta name="author" content="Muhamad Ikbal Maulana | ItsReimau" />
 
         <!-- Open Graph / Facebook -->
-        <meta content="https://itsreimau.is-a.dev/rei-ayanami" property="og:url" />
-        <meta content="website" property="og:type" />
-        <meta content="UmbrX - Bot WhatsApp" property="og:title" />
-        <meta content="Saya adalah Bot WhatsApp bernama UmbrX, dimiliki oleh ItsReimau." property="og:description" />
-        <meta content="dist/img/icon.jpg" property="og:image" />
+        <meta property="og:url" content="https://itsreimau.is-a.dev/rei-ayanami" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="UmbrX - Bot WhatsApp" />
+        <meta property="og:description" content="Saya adalah Bot WhatsApp bernama UmbrX, dimiliki oleh ItsReimau." />
+        <meta property="og:image" content="dist/img/icon.jpg" />
 
         <!-- Twitter -->
-        <meta content="summary_large_image" name="twitter:card" />
-        <meta content="UmbrX - Bot WhatsApp" name="twitter:title" />
-        <meta content="Saya adalah Bot WhatsApp bernama UmbrX, dimiliki oleh ItsReimau." name="twitter:description" />
-        <meta content="dist/img/icon.jpg" name="twitter:image" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="UmbrX - Bot WhatsApp" />
+        <meta name="twitter:description" content="Saya adalah Bot WhatsApp bernama UmbrX, dimiliki oleh ItsReimau." />
+        <meta name="twitter:image" content="dist/img/icon.jpg" />
 
         <!-- Tailwind CSS -->
         <script src="https://cdn.tailwindcss.com"></script>
 
         <!-- Boxicons -->
-        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
     </head>
     <body class="bg-gray-900 text-gray-300 font-sans min-h-screen flex flex-col">
         <!-- Peringatan -->
         <div class="bg-yellow-600 text-white text-center py-3">
-            <p class="text-sm font-medium">⚠️ Bot WhatsApp utama (UmbrX) sering kena banned oleh WhatsApp. Dianjurkan untuk menggunakan <a class="underline font-semibold" href="#section-inside">UmbrX Inside</a>.</p>
+            <p class="text-sm font-medium">
+                ⚠️ Bot WhatsApp utama (UmbrX) sering kena banned oleh WhatsApp. Dianjurkan untuk menggunakan
+                <a href="#section-inside" class="underline font-semibold">UmbrX Inside</a>.
+            </p>
         </div>
 
         <!-- Konten Utama -->
-        <main class="container mx-auto px-4 sm:px-6 py-12 flex-grow">
-            <!-- Bagian UmbrX Bot -->
-            <section class="bg-gray-800 rounded-lg shadow-lg p-8 mb-12">
-                <div class="text-center">
-                    <img class="inline-block w-auto h-20 mb-6" height="200" src="dist/img/logo.png" width="200" alt="Logo UmbrX Bot WhatsApp" />
-                    <p class="text-gray-400 max-w-xl mx-auto">
-                        Halo! Saya adalah bot WhatsApp bernama UmbrX, dimiliki oleh ItsReimau. Saya bisa melakukan banyak perintah, seperti membuat stiker, menggunakan AI untuk pekerjaan tertentu, dan beberapa perintah berguna lainnya. Saya
-                        di sini untuk menghibur dan menyenangkan Anda!
-                    </p>
-                    <div class="flex justify-center gap-4 mt-8">
-                        <button class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-6 rounded-lg flex items-center gap-2" href="https://wa.me/6281918403548"><i class="bx bx-play-circle"> </i>Coba</button>
-                        <button class="bg-green-600 hover:bg-green-700 text-white py-2 px-6 rounded-lg flex items-center gap-2" href="https://chat.whatsapp.com/FxEYZl2UyzAEI2yhaH34Ye"><i class="bx bx-group"> </i>Grup Dukungan</button>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Bagian UmbrX Inside -->
-            <section class="bg-gray-800 rounded-lg shadow-lg p-8 mb-12" id="section-inside">
-                <h2 class="text-3xl font-bold text-white text-center mb-8">UmbrX Inside</h2>
-                <p class="text-gray-400 text-center mb-8 max-w-2xl mx-auto">
-                    UmbrX Inside adalah program yang saya buat untuk mereka yang ingin memiliki bot berbasis UmbrX, karena bot UmbrX sering dibanned. Berbeda dengan layanan hosting otomatis seperti
-                    <a class="text-blue-400 hover:text-blue-500" href="https://wibusoft.com/">Wibusoft</a> atau <a class="text-blue-400 hover:text-blue-500" href="https://hisoka.net/">Hisoka</a>, sistem di sini manual, begitu ada permintaan
-                    masuk, saya langsung proses botnya. Saat ini tersedia 4 dari 5 slot. Hubungi saya melalui tombol di bawah untuk request bot, atau gunakan bot yang sudah tersedia!
+        <main class="container mx-auto px-6 py-12 flex-grow">
+            <!-- Informasi UmbrX Bot -->
+            <section class="bg-gray-800 rounded-lg shadow-lg p-8 mb-12 text-center">
+                <img src="dist/img/logo.png" alt="Logo UmbrX Bot WhatsApp" class="inline-block h-20 mb-6" />
+                <p class="text-gray-400 max-w-xl mx-auto">
+                    Halo! Saya adalah bot WhatsApp bernama UmbrX, dimiliki oleh ItsReimau. Saya bisa membuat stiker, menggunakan AI, dan membantu Anda dalam berbagai hal!
                 </p>
-                <div class="text-center mb-8">
-                    <button class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-6 rounded-lg text-lg flex items-center gap-2" href="https://wa.me/6283838039693"><i class="bx bx-chat"> </i>Hubungi Saya</button>
-                </div>
-                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <!-- Bot 1 -->
-                    <div class="bg-gray-700 rounded-lg shadow-md p-6 hover:bg-gray-600 transition-all">
-                        <img class="w-full h-40 object-cover mb-4" height="200" src="dist/img/thumbnail/umbrx.jpg" width="300" alt="Bot Kirito Assalam" />
-                        <h3 class="text-lg font-semibold text-white mb-2">Kirito Assalam</h3>
-                        <p class="text-sm text-gray-400 mb-4">Owner: Arsani Ariadeni</p>
-                        <div class="flex justify-between gap-2">
-                            <button class="bg-blue-600 hover:bg-blue-700 text-white py-1 px-4 rounded flex items-center gap-1" id="https://wa.me/6283845066757"><i class="bx bx-play"></i></button>
-                            <button class="bg-green-600 hover:bg-green-700 text-white py-1 px-4 rounded flex items-center gap-1" id="https://chat.whatsapp.com/IMXSad7rOtc80BH5hkbWPe"><i class="bx bx-group"></i></button>
-                            <a class="bg-purple-600 hover:bg-purple-700 text-white py-1 px-4 rounded flex items-center gap-1" href="https://inside.bidat93338.serv00.net" target="_blank"><i class="bx bx-cog"> </i> </a>
-                        </div>
-                    </div>
-                    <!-- Bot 2 -->
-                    <div class="bg-gray-700 rounded-lg shadow-md p-6 hover:bg-gray-600 transition-all">
-                        <img class="w-full h-40 object-cover mb-4" height="200" src="dist/img/thumbnail/umbrx.jpg" width="300" alt="Bot Akselia Yourbae" />
-                        <h3 class="text-lg font-semibold text-white mb-2">Akselia Yourbae</h3>
-                        <p class="text-sm text-gray-400 mb-4">Owner: Zhepyra Lunaria</p>
-                        <div class="flex justify-between gap-2">
-                            <button class="bg-blue-600 hover:bg-blue-700 text-white py-1 px-4 rounded flex items-center gap-1" id="https://wa.me/6288271525726"><i class="bx bx-play"></i></button>
-                            <button class="bg-green-600 hover:bg-green-700 text-white py-1 px-4 rounded flex items-center gap-1" id="https://chat.whatsapp.com/FxEYZl2UyzAEI2yhaH34Ye"><i class="bx bx-group"></i></button>
-                            <a class="bg-purple-600 hover:bg-purple-700 text-white py-1 px-4 rounded flex items-center gap-1" href="https://inside.bidat93338.serv00.net" target="_blank"><i class="bx bx-cog"> </i> </a>
-                        </div>
-                    </div>
-                    <!-- Bot 3 -->
-                    <div class="bg-gray-700 rounded-lg shadow-md p-6 hover:bg-gray-600 transition-all">
-                        <img class="w-full h-40 object-cover mb-4" height="200" src="dist/img/thumbnail/kmstyk.jpg" width="300" alt="Bot Kamisato Ayaka" />
-                        <h3 class="text-lg font-semibold text-white mb-2">Kamisato Ayaka</h3>
-                        <p class="text-sm text-gray-400 mb-4">Owner: Putri</p>
-                        <div class="flex justify-between gap-2">
-                            <button class="bg-blue-600 hover:bg-blue-700 text-white py-1 px-4 rounded flex items-center gap-1" id="https://wa.me/6285165309861"><i class="bx bx-play"></i></button>
-                            <button class="bg-green-600 hover:bg-green-700 text-white py-1 px-4 rounded flex items-center gap-1" id="https://chat.whatsapp.com/GtRlLAKLw9JG4ISqb09PeS"><i class="bx bx-group"></i></button>
-                            <a class="bg-purple-600 hover:bg-purple-700 text-white py-1 px-4 rounded flex items-center gap-1" href="https://inside.bidat93338.serv00.net" target="_blank"> <i class="bx bx-cog"></i> </a>
-                        </div>
-                    </div>
-                    <!-- Bot 4 -->
-                    <div class="bg-gray-700 rounded-lg shadow-md p-6 hover:bg-gray-600 transition-all">
-                        <img class="w-full h-40 object-cover mb-4" height="200" src="dist/img/thumbnail/mambo.jpg" width="300" alt="Bot Mambo" />
-                        <h3 class="text-lg font-semibold text-white mb-2">Mambo</h3>
-                        <p class="text-sm text-gray-400 mb-4">Owner: Limbo</p>
-                        <div class="flex justify-between gap-2">
-                            <button class="bg-blue-600 hover:bg-blue-700 text-white py-1 px-4 rounded flex items-center gap-1" id="https://wa.me/62895400967027"><i class="bx bx-play"></i></button>
-                            <button class="bg-green-600 hover:bg-green-700 text-white py-1 px-4 rounded flex items-center gap-1" id="https://chat.whatsapp.com/ES6AlKeJmZL4C1m4B0Su2t"><i class="bx bx-group"></i></button>
-                            <a class="bg-purple-600 hover:bg-purple-700 text-white py-1 px-4 rounded flex items-center gap-1" href="https://inside.bidat93338.serv00.net" target="_blank"> <i class="bx bx-cog"></i> </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Info Pembuatan Bot -->
-                <div class="bg-gray-700 rounded-lg shadow-md p-6 mt-8">
-                    <h3 class="text-lg font-semibold text-white mb-4">Catatan</h3>
-                    <ul class="text-sm text-gray-400 space-y-2">
-                        <li><i class="bx bxs-check-square"> </i>Tidak menerima permintaan fitur yang merugikan orang lain seperti bug, spam, dll.</li>
-                        <li><i class="bx bxs-check-square"> </i>Kami tidak bertanggung jawab atas masalah seperti banned atau spam.</li>
-                        <li><i class="bx bxs-check-square"> </i>Layanan ini gratis, namun jika ingin mendukung kami, Anda bisa memberikan donasi.</li>
-                    </ul>
+                <div class="flex justify-center gap-4 mt-6">
+                    <a href="https://wa.me/6281918403548" class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-6 rounded-lg flex items-center gap-2"> <i class="bx bx-play-circle"></i> Coba </a>
+                    <a href="https://chat.whatsapp.com/FxEYZl2UyzAEI2yhaH34Ye" class="bg-green-600 hover:bg-green-700 text-white py-2 px-6 rounded-lg flex items-center gap-2"> <i class="bx bx-group"></i> Grup Dukungan </a>
                 </div>
             </section>
 
-            <!-- Bagian Thanks To -->
-            <section class="bg-gray-800 rounded-lg shadow-lg p-8 mb-12">
-                <h2 class="text-3xl font-bold text-white text-center mb-8">Terima kasih kepada</h2>
-                <div class="flex justify-center gap-8 flex-wrap">
-                    <!-- Logo 1 -->
-                    <div class="flex flex-col items-center">
-                        <img class="h-12 rounded-full" src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Allah_calligraphy.svg" alt="Logo Allah SWT" />
-                        <p class="text-gray-400 text-sm mt-2">Allah SWT</p>
+            <!-- Formulir Pendaftaran Bot -->
+            <section class="bg-gray-800 rounded-lg shadow-lg p-8" id="section-inside">
+                <h2 class="text-3xl font-bold text-white text-center mb-6">UmbrX Inside</h2>
+                <p class="text-gray-400 text-center max-w-2xl mx-auto mb-8">
+                    UmbrX Inside adalah layanan untuk mereka yang ingin memiliki bot berbasis UmbrX.
+                </p>
+
+                <form id="botForm" class="max-w-lg mx-auto">
+                    <div class="mb-4">
+                        <label for="botname" class="block text-gray-400 text-sm font-bold mb-2">Nama Bot</label>
+                        <input type="text" id="botname" class="input-field" required />
                     </div>
-                    <!-- Logo 2 -->
-                    <div class="flex flex-col items-center">
-                        <img class="h-12 rounded-full" src="https://avatars.githubusercontent.com/u/90613431?v=4" alt="Logo ItsReimau" />
-                        <p class="text-gray-400 text-sm mt-2">ItsReimau</p>
+                    <div class="mb-4">
+                        <label for="fullname" class="block text-gray-400 text-sm font-bold mb-2">Nama Lengkap</label>
+                        <input type="text" id="fullname" class="input-field" required />
                     </div>
-                    <!-- Logo 3 -->
-                    <div class="flex flex-col items-center">
-                        <img class="h-12 rounded-full" src="https://www.serv00.com/static/ct8/img/logo.jpg" alt="Logo Serv00" />
-                        <p class="text-gray-400 text-sm mt-2">Serv00</p>
+                    <div class="mb-4">
+                        <label for="username" class="block text-gray-400 text-sm font-bold mb-2">Nama Pengguna</label>
+                        <input type="text" id="username" class="input-field" required />
                     </div>
-                    <!-- Logo 4 -->
-                    <div class="flex flex-col items-center">
-                        <img class="h-12 rounded-full" src="https://avatars.githubusercontent.com/u/73673322?v=4" alt="Logo JastinXyz" />
-                        <p class="text-gray-400 text-sm mt-2">JastinXyz</p>
+                    <div class="mb-4">
+                        <label for="password" class="block text-gray-400 text-sm font-bold mb-2">Kata Sandi</label>
+                        <input type="password" id="password" class="input-field" required />
                     </div>
-                    <!-- Logo 5 -->
-                    <div class="flex flex-col items-center">
-                        <img class="h-12 rounded-full" src="https://avatars.githubusercontent.com/u/84653497?v=4" alt="Logo Idul" />
-                        <p class="text-gray-400 text-sm mt-2">Idul</p>
-                    </div>
-                    <!-- Logo 6 -->
-                    <div class="flex flex-col items-center">
-                        <img class="h-12 rounded-full" src="https://avatars.githubusercontent.com/u/101232052?v=4" alt="Logo UdeanDev" />
-                        <p class="text-gray-400 text-sm mt-2">UdeanDev</p>
-                    </div>
-                    <!-- Logo 7 -->
-                    <div class="flex flex-col items-center">
-                        <img class="h-12 rounded-full" src="https://avatars.githubusercontent.com/u/170422885?v=4" alt="Logo Nyx Altair" />
-                        <p class="text-gray-400 text-sm mt-2">Nyx Altair</p>
-                    </div>
-                    <!-- Logo 8 -->
-                    <div class="flex flex-col items-center">
-                        <img class="h-12 rounded-full" src="https://avatars.githubusercontent.com/u/166631827?v=4" alt="Logo Caliph Dev" />
-                        <p class="text-gray-400 text-sm mt-2">Caliph Dev</p>
-                    </div>
-                    <!-- Logo 9 -->
-                    <div class="flex flex-col items-center">
-                        <img class="h-12 rounded-full" src="https://avatars.githubusercontent.com/u/95547694?v=4" alt="Logo Fatahillah Al makarim" />
-                        <p class="text-gray-400 text-sm mt-2">Fatahillah Al makarim</p>
-                    </div>
-                    <!-- Logo 10 -->
-                    <div class="flex flex-col items-center">
-                        <img class="h-12 rounded-full" src="https://avatars.githubusercontent.com/u/148448773?v=4" alt="Logo FastURL (alias Hikaru)" />
-                        <p class="text-gray-400 text-sm mt-2">FastURL (alias Hikaru)</p>
-                    </div>
-                </div>
-                <p class="text-gray-400 text-center text-sm mt-2">Dan kepada semua pihak yang telah membantu dalam pengembangan layanan ini.</p>
+                    <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg font-bold text-lg">
+                        Daftarkan Bot
+                    </button>
+                </form>
+
+                <!-- Hasil Respons -->
+                <div id="responseMessage" class="mt-6 text-center text-lg font-semibold"></div>
             </section>
         </main>
 
         <!-- Footer -->
         <footer class="bg-gray-800 text-center py-6">
-            <p class="text-gray-500 text-sm">Copyright © 2025 <a class="text-blue-400 hover:text-blue-500" href="https://itsreimau.is-a.dev/">ItsReimau</a>. All Rights Reserved.</p>
+            <p class="text-gray-500 text-sm">Copyright © 2025 <a href="https://itsreimau.is-a.dev/" class="text-blue-400 hover:text-blue-500">ItsReimau</a>. All Rights Reserved.</p>
         </footer>
+
+        <!-- JavaScript -->
+        <script src="dist/js/script.js"></script>
     </body>
 </html>
