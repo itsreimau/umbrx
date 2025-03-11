@@ -18,18 +18,16 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
+        const queryParams = new URLSearchParams({
+            botname,
+            fullname,
+            username,
+            password
+        }).toString();
+
         try {
-            const response = await fetch("https://inside.bidat93338.serv00.net/bot/create", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify({
-                    botname,
-                    fullname,
-                    username,
-                    password
-                }),
+            const response = await fetch(`https://inside.bidat93338.serv00.net/bot/create?${queryParams}`, {
+                method: "GET"
             });
 
             const data = await response.json();
